@@ -1,0 +1,136 @@
+﻿<Window x:Class="CalkinWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalkinWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Grid ShowGridLines="False" Background="Lavender">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                   
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                   
+                </Grid.ColumnDefinitions>
+         
+          
+            
+        <ListBox Grid.Row="0" Grid.Column="1" Background="Lavender">
+            <ListBoxItem  Background="Lavender" >
+                <TextBox x:Name="Input1" Height="30" Width="100" FontSize="20" Foreground="BlueViolet" >
+                    <TextBox.ToolTip>
+                        <ToolTip Width="300" Height="100" Background="Lavender">
+                            <StackPanel>
+                                <TextBlock Text="Напишите число 1" FontSize="20" Foreground="BlueViolet"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </TextBox.ToolTip> 
+                </TextBox>
+            </ListBoxItem>
+        </ListBox>
+        
+        <ListBox Grid.Row="0" Grid.Column="2" Background="Lavender" >
+            <ListBoxItem  Background="Lavender" >
+                <TextBox x:Name="Input2" Height="30" Width="100" FontSize="20" Foreground="BlueViolet" >
+                    <TextBox.ToolTip>
+                        <ToolTip Width="300" Height="100" Background="Lavender">
+                            <StackPanel>
+                                <TextBlock Text="Напишите число 2" FontSize="20" Foreground="BlueViolet"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </TextBox.ToolTip> 
+                </TextBox>
+            </ListBoxItem>
+        </ListBox>
+                  
+       
+          
+          <Button Grid.Row="1" Grid.Column="0" x:Name="A1" Content="Сложить" Height="60" Width="300" Click="Start_OnClick_Sum">
+              <Button.ToolTip>
+                  <ToolTip Width="300" Height="100" Background="Lavender">
+                      <StackPanel>
+                          <TextBlock Text="Сложить" FontSize="20" Foreground="BlueViolet"/>
+                          
+                      </StackPanel>
+                  </ToolTip>
+              </Button.ToolTip>
+          </Button>
+        
+        <Button Grid.Row="2" Grid.Column="0" x:Name="A2" Content="Вычесть" Height="60" Width="300" Click="Start_OnClick_Sub">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="100" Background="Lavender">
+                    <StackPanel>
+                        <TextBlock Text="Вычесть" FontSize="20" Foreground="BlueViolet"/>
+                          
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="1" x:Name="A3" Content="Умножить" Height="60" Width="300" Click="Start_OnClick_Mult">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="100" Background="Lavender">
+                    <StackPanel>
+                        <TextBlock Text="Умножить" FontSize="20" Foreground="BlueViolet"/>
+                          
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        
+        <Button Grid.Row="2" Grid.Column="1" x:Name="A4" Content="Разделить" Height="60" Width="300" Click="Start_OnClick_div">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="100" Background="Lavender">
+                    <StackPanel>
+                        <TextBlock Text="Разделить" FontSize="20" Foreground="BlueViolet"/>
+                          
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        
+        <Button Grid.Row="1" Grid.Column="3" x:Name="A5" Content="Возвести в степень" Height="60" Width="300" Click="Start_OnClick_Pow1">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="100" Background="Lavender">
+                    <StackPanel>
+                        <TextBlock Text="Возвести в степень" FontSize="20" Foreground="BlueViolet"/>
+                          
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        
+        <Button Grid.Row="2" Grid.Column="3" x:Name="A6" Content="Квадратный корень" Height="60" Width="300" Click="Start_OnClick_Sqrt1">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="100" Background="Lavender">
+                    <StackPanel>
+                        <TextBlock Text="Квадратный корень" FontSize="20" Foreground="BlueViolet"/>
+                          
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+
+       
+       
+           
+          <Button x:Name="Otvet1" Grid.Row="3" Grid.Column="1" FontSize="20" Background="Pink">
+             
+                  <StackPanel>
+                     
+                  </StackPanel>
+             
+          </Button>   
+          
+      </Grid>
+ </Window>   
+
